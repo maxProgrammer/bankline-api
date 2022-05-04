@@ -1,6 +1,6 @@
 package com.api.santander.banklineapi.model;
 
-public enum MovimetacaoTipo {
+public enum MovimentacaoTipo {
     RECEITA,
     DESPESA
 }
