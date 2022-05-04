@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BanklineApiApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(BanklineApiApplication.class, args);
 	}
 
