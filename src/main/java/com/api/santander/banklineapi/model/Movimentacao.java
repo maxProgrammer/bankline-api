@@ -1,5 +1,7 @@
 package com.api.santander.banklineapi.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -37,6 +39,7 @@ public class Movimentacao {
         this.id = id;
     }
 
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     public LocalDateTime getDataHora() {
         return dataHora;
     }
