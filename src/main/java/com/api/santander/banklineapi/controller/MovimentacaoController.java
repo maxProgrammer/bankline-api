@@ -24,10 +24,14 @@ public class MovimentacaoController {
         return repository.findAll();
     }
 
+    @GetMapping("/{idConta}")
+    public List<Movimentacao> findAll(@PathVariable("idConta") Integer idConta){
+        return repository.findByIdConta(idConta);
+    }
+
     @PostMapping
     public void save(@RequestBody MovimentacaoDto movimentacao){
         service.save(movimentacao);
-
-
     }
+
 }
