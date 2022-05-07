@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/correntistas")
-@OpenAPIDefinition(info = @Info(title = "Account API", version = "1.0", description = "REST API responsible to allow CRUD costumer account."))
+@OpenAPIDefinition(info = @Info(title = "Account API", version = "1.0", description = "REST API responsible to allow CRUD costumer/operations account."))
 public class CorrentistaController {
 
     @Autowired
